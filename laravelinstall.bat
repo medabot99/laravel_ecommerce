@@ -1,0 +1,3 @@
+@echo OFF
+echo INSTALLING LARAVEL PACKAGE...
+composer install

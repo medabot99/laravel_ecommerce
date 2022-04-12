@@ -1,0 +1,1 @@
+<option {{ $isSelected($value) ? 'selected="selected"' : '' }} value="{{ $value ?? '' }}">{{ $placeholder ?? '' }}</option>

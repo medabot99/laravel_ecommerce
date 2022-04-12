@@ -1,0 +1,25 @@
+VIRTUAL HOST (XAMPP)
+
+<VirtualHost *:80>
+DocumentRoot "C:\xampp\htdocs\toff\public"
+ServerName toff-mall.my
+<Directory "C:\xampp\htdocs\toff\public">
+</Directory>
+</VirtualHost>
+
+<VirtualHost *:443>
+    DocumentRoot "C:\xampp\htdocs\toff\public"
+    ServerName toff-mall.my
+    SSLEngine on
+    SSLCertificateFile "conf/ssl.crt/server.crt"
+    SSLCertificateKeyFile "conf/ssl.key/server.key"
+    <Directory "C:\xampp\htdocs\toff\public">
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
+
+HOST FILE 
+
+127.0.0.1 toff-mall.my
